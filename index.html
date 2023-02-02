@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="aardappel">
+        <header>
+            <h2 style="margin: 0; margin-left: 30px; color: #DA3836; position: relative; top: 50%; transform: translateY(-50%); width: 300px; float: left;">Sean Neerings</h2>
+            <nav style="position: relative; top: 50%; transform: translateY(-50%);">
+                <div class="nav-div-link"><a href="#footer" class="nav-link">Footer</a></div>
+                <div class="nav-div-link"><a href="#main3" class="nav-link">Contact</a></div>
+                <div class="nav-div-link"><a href="#main2" class="nav-link">Opdrachten</a></div>
+                <div class="nav-div-link selected"><a href="#main" class="nav-link">Wat heb ik geleerd?</a></div>
+            </nav>
+            <div id="hamburger" onclick="toggleHamburger()">|||</div>
+        </header>
+        <nav id="links">
+            <div class="nav-div-link"><a href="#footer" class="nav-link">Footer</a></div>
+            <div class="nav-div-link"><a href="#main3" class="nav-link">Contact</a></div>
+            <div class="nav-div-link"><a href="#main2" class="nav-link">Opdrachten</a></div>
+            <div class="nav-div-link"><a href="#main" class="nav-link">Wat heb ik geleerd?</a></div>
+        </nav>
+        <div id="main">
+            <h3 style="margin: 0; margin-left: 30px; width: 50%; float: left;">Wat heb ik geleerd deze periode?</h3>
+            <p style="margin: 0; margin-left: 30px; width: 50%; float: left;">
+                van web in deze periode heb ik veel geleerd.<br>
+                ik heb geleerd over hamburger menu's over adaptive/responsive<br>
+                hoe ik een foto omzet van photoshop naar code en nog veel meer. 
+            </p>
+            <h3 style="margin: 0; margin-left: 30px; width: 50%; float: left; margin-top: 20px;">Wat heb ik geleerd dit schooljaar?</h3>
+            <p style="margin: 0; margin-left: 30px; width: 50%; float: left;">
+                Dit schooljaar heb ik een heleboel geleerd. <br>
+                Ik heb bijvoorbeeld geleerd hoe ik een basis web pagina kan opzetten, <br>
+                hoe ik stijling toevoeg aan de pagina <br>
+                en hoe ik javascript toevoeg via een extern bestand. <br>
+                Ook heb ik veel geleerd over PHP en hoe ik dit moet toepassen. <br>
+                Bijvoorbeeld in een inlog systeem.<br>
+                een database connectie aanleggen en een database maaken <br>
+                en hiervoor will ik alle docenten bedanken die ons al deze fantastische dingen geleerd hebben
+            </p>
+            <div id="profielfoto"></div>
+        </div>
+        <div id="main2">
+            <div style="border-left: 10px solid #DA3836; height: 35px; padding-left: 10px; margin-left: 50px; display: block; transform: translateY(100%);"><h2 style="margin: 0;">Opdrachten van periode 4</h2></div>
+            <img src="./assets/imgs/potlood.png" alt="pencil" width="150" height="150">
+            <img src="./assets/imgs/potlood.png" alt="pencil" width="150" height="150">
+            <img src="./assets/imgs/potlood.png" alt="pencil" width="150" height="150">
+            <img src="./assets/imgs/potlood.png" alt="pencil" width="150" height="150"> <br>
+            <p><b>Opdracht 1</b> <br> <span style="color: grey;">Hamburger menu</span></p>
+            <p><b>Opdracht 2</b> <br> <span style="color: grey;">Responsive vs adaptive</span></p>
+            <p><b>Opdracht 3</b> <br> <span style="color: grey;">Responsive kolommen</span></p>
+            <p><b>Opdracht 4</b> <br> <span style="color: grey;">PSD naar html css</span></p>
+        </div>
+        <div id="main3">
+            <div style="border-left: 10px solid #DA3836; height: 35px; padding-left: 10px; margin-left: 50px; display: block; transform: translateY(100%);"><h2 style="margin: 0;">Contact</h2></div>
+            <form>
+                <input type="text" placeholder="Naam" required>
+                <input type="email" placeholder="E-mailadres" required>
+                <input type="text" placeholder="Onderwerp" required>
+                <textarea required style="width: 75%;" height="200" placeholder="Bericht"></textarea>
+            </form>
+        </div>
+        <footer id="footer">
+            <p id="copyright"></p>
+        </footer>
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
